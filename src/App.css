@@ -1,1 +1,90 @@
+.body{
+    position: relative;
+}
 
+.container {
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,5%);
+    width: 500px;
+    border-radius: 50px;
+    background: #F6FBF9;
+}
+
+.block{
+    margin-top: 25px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 55.2264px;
+    line-height: 72px;
+    text-align: center;
+    color: #212B27
+}
+
+.form {
+    margin: 0 auto;
+}
+
+.selects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+}
+
+
+.label {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input {
+    padding: 5px 10px;
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+}
+
+.textarea{
+    height: 250px;
+    resize: none;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.button{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    transition: all 0.5s ease;
+    background: #84C7AE;
+    border-radius: 23.011px;
+}
+
+.button:hover{
+    transition: all 0.5s ease;
+    background: #468a71;
+}
