@@ -31,12 +31,14 @@
 
 .selects{
     display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: end;
 }
 
 
 .label {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -55,17 +57,33 @@
 .input {
     padding: 5px 10px;
     background: #FFFFFF;
-    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
     border-radius: 15.3407px;
+    transition: all 0.5s ease;
+}
+
+.input:hover{
+    transition: all 0.5s ease;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.errorBorder{
+    border: 1px solid #e63946;
 }
 
 .textarea{
-    height: 250px;
+    height: 150px;
     resize: none;
     padding: 25px;
     background: #FFFFFF;
-    border: 1.53407px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15.3407px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.textarea:hover{
+    transition: all 0.5s ease;
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .buttons {
@@ -87,4 +105,32 @@
 .button:hover{
     transition: all 0.5s ease;
     background: #468a71;
+}
+
+@media screen and (max-width:650px) {
+    .container{
+        width: auto;
+        padding: 25px;
+        transform: translate(-50%,0%);
+    }
+    .title{
+        font-size: 45px;
+        line-height: normal;
+    }
+    .selects{
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+    }
+    .label{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        padding: 35px;
+    }
+    .title{
+        font-size: 35px;
+    }
 }
